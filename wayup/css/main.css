@@ -1,0 +1,374 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', 'Open Sans';
+	font-size: 15px;
+}
+
+*:focus {
+    outline: none;
+}
+
+h1,h2,h3,h4,h5,h6, a {
+	font-family: Ubuntu;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+/*  =================== HEADER SECTION ===========*/
+
+.header {
+	background-image: linear-gradient(-45deg, #378fd9, #4dbefe);
+}
+
+.logo {
+	padding-top: 50px;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__title {
+	width: 450px;
+	color: #fff;
+	padding-top: 150px;
+}
+
+.header__title span {
+	font-size: 45px;
+}
+
+.header__subtitle {
+	font-family: Open Sans;
+	width: 390px;
+	color: #fff;
+	line-height: 1.4em;
+	margin-bottom: 37px;
+	margin-top: 30px;	
+}
+
+.btn {
+	text-decoration: none;
+	background-color: #ffd429;
+	padding: 20px 22px;
+	color: #2e2a1b;
+
+}
+
+.btn:hover {
+	cursor: pointer;
+	background-color: #f9cf26;
+}
+
+
+/* ========== SECTION BENEFITS ============*/
+
+.benefits {
+	padding: 110px;
+	text-align: center;
+}
+
+.benefits__list {
+	margin-top: 72px;
+}
+
+.benefit {
+	width: 290px;
+}
+
+.benefit__image {
+	padding-bottom: 27px;
+}
+
+
+/* ============ SECTION ORDER FORM ============ */
+
+.order {
+	padding: 100px 0;
+	background-color: #ecf3f8;
+	text-align: center;
+}
+
+.order__title {
+	margin-bottom: 50px;
+}
+
+.form	{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.input {
+	width: 330px;
+	height: 45px;
+	display: block;
+	margin-top: 13px;
+	border: 1px #bbbbbb solid;
+	padding-left: 25px;
+}
+
+.submit {
+	width: 358px;
+	margin-top: 13px;
+	border: 0;
+	cursor: pointer;
+	font-family: Ubuntu;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+.submit:hover {
+	cursor: pointer;
+
+}
+
+
+/* ======= FOOTER SECTION ==========*/
+
+.footer {
+	background-color: #164d7a;
+	color: #fff;
+	text-align: center;
+}
+
+.credits {
+	padding: 60px 0;
+	margin: 0;
+	font-size: 14px;
+}
+
+
+/* ======== MEDIA QUERIES ===========*/
+
+
+
+/* 992px - 1200px */
+
+@media screen and (max-width: 1200px) {
+
+	.container {
+		width: 960px;
+	}
+
+	.hero {
+		width: 700px;
+	}
+
+	.header__title {
+    	padding-top: 110px;
+   }
+
+   .benefits {
+   	padding: 100px 0;
+   }
+
+   .logo {
+		display: block;
+    	width: 90px;
+    	margin: 0 auto;
+	}
+}
+
+
+/* 768px - 992px */
+
+@media screen and (max-width: 992px) {
+
+	.container {
+		width: 720px;
+	}
+
+	.wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+	.header__title {
+		width: 600px;
+		text-align: center;
+	}
+
+	.header__subtitle {
+		margin: 20px 0 50px 100px;
+    	text-align: center;
+	}
+
+	.btn {
+		display: block;
+    	width: 150px;
+    	margin: 0 auto;
+	}
+
+	.submit {
+		width: 358px;
+		margin-top: 13px;
+	}
+
+}
+
+
+/* 576px - 768px */
+
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+	.submit {
+		margin-top: 13px;
+	}
+	.hero {
+		height: 500px;
+	}
+
+}
+
+
+/* 320px - 576px */
+
+@media screen and (max-width: 576px) {
+
+	.container {
+		width: 300px;
+		padding: 30px 0;
+	}
+
+	.header__title {
+	   padding: 20px 0px;
+	   width: 300px;
+	   margin: 0 auto;
+	}
+
+	.header__subtitle {
+		 margin: 0 auto;
+		 width: 90%;
+		 padding-bottom: 20px;
+	}
+	.submit {
+		width: 358px;
+   	margin: 13px 0px;
+	}
+
+	.benefits {
+		padding: 0;
+	}
+
+	.benefits__title {
+		margin-top: 20px;
+	}
+	
+	.logo {
+		display: block;
+    	width: 90px;
+    	margin: 0 auto;
+	}
+
+	.hero {
+		height: 280px;
+    	width: 90%;
+    	padding-top: 20px;
+	}
+
+	.input {
+		width: 300px;
+	}
+
+	.submit {
+		width: 330px;
+	}
+
+	.credits {
+		font-size: 0.8em;
+	}
+}
+
+/* below - 320px */
+
+@media screen and (max-width: 320px)  {
+
+	.container {
+		width: 90%;
+	}
+
+	.header__title {
+		padding: 20px 0px;
+	   font-size: 1.2em;
+	   width: 70%;
+	   margin: 0 auto;
+	}
+
+	.logo {
+		display: block;
+    	width: 90px;
+    	margin: 0 auto;
+	}
+
+	.header__subtitle {
+		width: 80%;
+      text-align: center;
+      margin: 0 auto;
+      padding-bottom: 20px;
+	}
+
+	.hero {
+		height: 180px;
+		width: 70%;
+		padding-top: 20px;
+	}
+
+	.benefits {
+		padding: 50px;
+	}
+
+	.benefit {
+		width: 250px;
+	}
+
+	.input {
+		width: 200px;
+		padding-left: 15px;
+	}
+
+	.submit {
+		width: 218px;
+	}
+
+	.credits {
+		font-size: 0.7em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
